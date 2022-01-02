@@ -1,0 +1,261 @@
+body{
+    max-width: 1120px;
+    margin: 0%;
+    padding: 0%;
+}
+@keyframes jump{
+    0%   {top: 0px;}
+    50%  {top: 5px;}
+    100% {top: 0px;}
+}
+.container {
+    
+    display: flex;
+    background-color: rgb(244, 244, 245);
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+ }
+
+ .container .logo {
+    font-family: 'Lobster', cursive;
+    color: #ffb142;
+    margin-top: 5px;
+    cursor: default;
+}
+
+.logo:hover{
+    color: orange;
+}
+
+.container ul {
+    flex: 1;
+    text-align: right;
+    list-style: none;
+}
+
+.container ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    margin-top: 20px;
+}
+
+.container ul li a:hover {
+    color: #925807;
+    border-bottom: #925807 1px solid;
+}
+.container ul li a {
+    font-family: 'Lobster', cursive;
+    color: #ffb142;
+    font-size: 18px;
+    transition-duration: 0.6s;
+} 
+
+.title{
+    font-family: 'Lobster', cursive;
+    color: #ffb142;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 170px;
+}
+.order{
+    position: relative;
+    border: solid thin #ffb142;
+    border-radius: 40px;
+    padding: 10px;
+    font-family: sans-serif;
+    top: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+
+}
+.order a {
+    text-decoration: auto;
+    color: #ffb142;
+    font-weight: bolder;
+}
+.order:hover a{
+    color: white;
+    transition-duration: 0.5s;
+}
+.order:hover {
+
+    background-color: #ffb142;
+    transition-duration: 0.5s;
+}
+.intro{
+    height: 370px;
+}
+.img{
+    position: relative;
+    float: right;
+    height: 350px;
+    margin-right: 170px;
+    bottom: 75px;
+    animation-name: jump;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.chefs0{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 60%;
+}
+.chefs{
+    height: 350px;
+    width: 280;
+    display: flex;
+    flex-direction: column;
+    border: solid thick  #ffb142;
+    border-radius: 15px;
+    margin-left: 15px;
+    padding: 15px;
+    cursor: pointer;
+}
+.first-chef{
+    height: 300px;
+    width: 300px;
+    transition: 0.3s;
+}
+.first-chef:hover{opacity: 0.7;}
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+}
+.chef-name{
+    font-family: 'Lobster', cursive;
+    color: #925807;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+.items-title{
+    color: #925807;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 120px;
+    font-size: 75px;
+    margin-top: 140px;
+}
+.food{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100px;
+}
+.items{
+    height: 350px;
+    width: 300;
+    display: flex;
+    border: solid thick  black;
+    border-radius: 15px;
+    margin-left: 15px;
+    margin-top: 50px;
+    padding: 15px;
+   
+}
+.items:hover{
+    background-color: orange;
+   width: 310px;
+   transition-duration: 2s;
+}
+.mac{
+    height: 300px;
+    width: 300px;
+}
+.mac:hover{
+    transform: scale(1.1,1.1);
+}
+.menu{
+    position: relative;
+    border: solid thin #925807;
+    border-radius: 15px;
+    padding: 12px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    top: 100px;
+    margin-left: 46%;
+    cursor: pointer;
+}
+.menu:hover{
+    color: white;
+    background-color: #ffb142;
+    transition-duration: 0.5s;
+}
+.menu a{
+    text-decoration: none;
+    color: #ffb142;
+}
+.menu:hover a{
+    color: white;
+}
+.end{
+    position: relative;
+    top: 200px;
+    margin-left: -150px;
+    padding-bottom: 20px;
+}

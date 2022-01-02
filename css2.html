@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Order your meal and get it as soon as possible from Big Burger">
+        <title>Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="master/font-awesome.min.css">
+          <link rel="stylesheet" href="main.css">
+        
+    </head>
+    <body>
+        <!--                                       header                         -->
+
+
+         
+        <header class="container" style="max-width: 1050px;display: flex;background-color: rgb(244, 244, 245);">
+            <h1 class="logo">burger</h1>
+            <ul>
+                <li><a style="text-decoration: none;" href="css2.html">home</a></li>
+                <li><a style="text-decoration: none;" href="index.html">menu</a></li>
+                <li><a style="text-decoration: none;" href="css2.html">chefs</a></li>
+                <li><a style="text-decoration: none;" href="contact.html">contact us</a></li>
+            </ul>
+        </header>
+        <div class="intro">
+            <img src="C:\Users\Ahmed\Desktop\burger.png" alt="Not found" class="img">
+            <p class="title">Welcome to our restaurant,<br>choose your meal now</p>
+            <span class="order"><a href="contact.html">order now</a></span>
+        </div>
+        <div class="chefs0">
+            <div class="chefs">
+                <img src="C:\Users\Ahmed\Desktop\first chef.jpg" alt="Chef Alaa" class="first-chef" id="first-chef">
+                <h1 class="chef-name">Chef Alaa</h1>
+            </div>
+            <div class="chefs">
+                <img src="C:\Users\Ahmed\Desktop\second chef.png" alt="Chef Hassan" class="first-chef" id="second-chef">
+                <h1 class="chef-name">Chef Hassan</h1>
+            </div>
+            <div class="chefs">
+                <img src="C:\Users\Ahmed\Desktop\third chef.png" alt="Chef Dalia" class="first-chef" id="third-chef">
+                <h1 class="chef-name">Chef Dalia</h1>
+            </div> 
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+             <script>
+              var modal = document.getElementById("myModal");
+              var img = document.getElementById("first-chef");
+              var modalImg = document.getElementById("img01");
+              var captionText = document.getElementById("caption");
+              img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+              }
+              var span = document.getElementsByClassName("close")[0];
+              span.onclick = function() { 
+              modal.style.display = "none";
+              }
+             </script>
+                 <script>
+                    var modal = document.getElementById("myModal");
+                    var img = document.getElementById("second-chef");
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
+                    img.onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                    }
+                    var span = document.getElementsByClassName("close")[0];
+                    span.onclick = function() { 
+                    modal.style.display = "none";
+                    }
+                 </script>
+                     <script>
+                        var modal = document.getElementById("myModal");
+                        var img = document.getElementById("third-chef");
+                        var modalImg = document.getElementById("img01");
+                        var captionText = document.getElementById("caption");
+                        img.onclick = function(){
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                        }
+                        var span = document.getElementsByClassName("close")[0];
+                        span.onclick = function() { 
+                        modal.style.display = "none";
+                        }
+                     </script>
+        <P class="items-title">Best Items In Resturant</P>
+        <section class="food">
+            <div class="items">
+                <img src="C:\Users\Ahmed\Desktop\big mac.png" alt="big mac" class="mac">
+            </div>
+            <div class="items">
+                <img src=C:\Users\Ahmed\Desktop\mac.png alt="mac" class="mac">
+            </div>
+            <div class="items">
+                <img src=C:\Users\Ahmed\Desktop\phita.png alt="phita" class="mac">
+            </div>
+        </section>
+        <span class="menu"><a href="index.html">menu</a></span>
+        <i class="end">All rights reserved to section 2 © 2021</i>
+    </body>
+    </html>
